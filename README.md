@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# AI-Driven Platform for Digital Resilience Against Disinformation and Online Harassment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+Our organization is dedicated to empowering resource-limited organizations to build the digital resilience necessary to withstand disinformation, targeted harassment, and other forms of online toxicity. This platform consolidates the founders' intellectual property and expertise—including training materials, templates, original research, counter-disinformation strategic communications campaigns, and publicly available research and data—into an accessible, affordable, and navigable user-facing platform.
 
-## Available Scripts
+By leveraging AI, we have created a platform that offers tailored resources to users, based on their specific needs and scenarios, helping them effectively manage disinformation and online harassment.
 
-In the project directory, you can run:
+## Problem Statement
+Organizations with limited resources often struggle to build the digital resilience required to counter disinformation and harassment campaigns. These challenges require an AI-driven solution that can provide real-time, scenario-based responses to manage different types of interactions. The platform must support multiple communication channels to ensure seamless access to information and assistance.
 
-### `npm start`
+## Solution
+We developed an AI-driven platform using **Google Vertex AI Builder**, custom datasets, and a **React-based chatbot**. The platform handles interactions in three distinct scenarios:
+1. **Calm or Normal Conversation**: The chatbot provides straightforward responses and relevant resources.
+2. **Angry or Aggressive Behavior**: The chatbot is designed to recognize anger or aggression and responds in a way that deescalates the situation, helping to clarify any doubts and provide useful information.
+3. **Threatening Behavior**: If the interaction becomes threatening, the chatbot will continue efforts to deescalate. If the threat escalates further, it provides contact information for higher-level support and terminates the conversation.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Additionally, we integrated **Google Dialogflow** to enable omnichannel support, allowing the AI agent to interact with users via:
+- Text messages
+- Emails
+- Phone calls
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This omnichannel capability ensures that users can access support through their preferred communication channels, providing a seamless and consistent experience.
 
-### `npm test`
+## Key Technologies
+- **Google Vertex AI Builder**: Used to develop the AI backend, capable of processing and analyzing custom datasets for scenario-based responses.
+- **Custom Datasets**: Ensured the platform delivers relevant, context-specific support to various organizations facing disinformation or harassment.
+- **React**: Implemented the frontend chatbot interface to guide users through the platform.
+- **Google Dialogflow**: Enabled omnichannel communication, allowing the AI agent to interact via multiple channels such as text messages, emails, and phone calls.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How it Works
+1. **Scenario Handling**: The AI chatbot evaluates the user's tone and categorizes the conversation into one of three scenarios (Calm, Aggressive, or Threatening). Based on this, the chatbot provides a personalized response:
+   - Calm interactions receive informative responses and relevant resources.
+   - Aggressive or threatening interactions trigger deescalation responses designed to defuse tension while addressing the user’s needs.
+   - If the threat becomes too severe, the chatbot provides external contact information and ends the conversation to ensure the safety of staff.
+   
+2. **Omnichannel Support**: Through **Google Dialogflow**, the platform can interact with users across various communication channels, ensuring accessibility regardless of the medium (text, email, or phone).
 
-### `npm run build`
+## Benefits
+- **Scalable and Adaptive**: Organizations can access the platform and tailor it to their specific needs, even with limited resources.
+- **Lower Barrier to Entry**: By offering different levels of support and resources, organizations can easily access tools that are relevant to their size and budget.
+- **Personalized Support**: AI-powered responses ensure that each interaction is handled appropriately, providing users with accurate information and effective support.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Conclusion
+This AI-driven platform enables organizations with limited resources to build the digital resilience they need to combat disinformation and harassment campaigns. With its omnichannel support, adaptive responses, and tailored resources, the platform ensures that organizations can effectively manage digital threats, regardless of their size or expertise.
