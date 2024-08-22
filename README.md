@@ -9,17 +9,19 @@ By leveraging AI, we have created a platform that offers tailored resources to u
 Organizations with limited resources often struggle to build the digital resilience required to counter disinformation and harassment campaigns. These challenges require an AI-driven solution that can provide real-time, scenario-based responses to manage different types of interactions. The platform must support multiple communication channels to ensure seamless access to information and assistance.
 
 ## Solution
-We developed an AI-driven platform using **Google Vertex AI Builder**, custom datasets, and a **React-based chatbot**. The platform handles interactions in three distinct scenarios:
-1. **Calm or Normal Conversation**: The chatbot provides straightforward responses and relevant resources.
-2. **Angry or Aggressive Behavior**: The chatbot is designed to recognize anger or aggression and responds in a way that deescalates the situation, helping to clarify any doubts and provide useful information.
-3. **Threatening Behavior**: If the interaction becomes threatening, the chatbot will continue efforts to deescalate. If the threat escalates further, it provides contact information for higher-level support and terminates the conversation.
+We developed an AI-driven platform using Google Vertex AI Builder, custom datasets, and a React-based chatbot. The platform handles interactions in three distinct scenarios:
 
-Additionally, we integrated **Google Dialogflow** to enable omnichannel support, allowing the AI agent to interact with users via:
+- **Calm or Normal Conversation**: The chatbot provides straightforward responses and relevant resources.
+- **Angry or Aggressive Behavior**: The chatbot is designed to recognize anger or aggression and responds in a way that deescalates the situation, helping to clarify any doubts and provide useful information.
+- **Threatening Behavior**: If the interaction becomes threatening, the chatbot will continue efforts to deescalate. If the threat escalates further, it provides contact information for higher-level support and terminates the conversation.
+
+Additionally, we integrated Google Dialogflow to enable omnichannel support, allowing the AI agent to interact with users via:
+
 - Text messages
 - Emails
 - Phone calls
 
-This omnichannel capability ensures that users can access support through their preferred communication channels, providing a seamless and consistent experience.
+This omnichannel capability ensures that users can access support through their preferred communication channels, providing a seamless and consistent experience. The platform can also be deployed for specific datasets, such as those used in Florida and Georgia state elections.
 
 ## Key Technologies
 - **Google Vertex AI Builder**: Used to develop the AI backend, capable of processing and analyzing custom datasets for scenario-based responses.
@@ -33,7 +35,7 @@ This omnichannel capability ensures that users can access support through their 
    - Aggressive or threatening interactions trigger deescalation responses designed to defuse tension while addressing the user’s needs.
    - If the threat becomes too severe, the chatbot provides external contact information and ends the conversation to ensure the safety of staff.
    
-2. **Omnichannel Support**: Through **Google Dialogflow**, the platform can interact with users across various communication channels, ensuring accessibility regardless of the medium (text, email, or phone).
+2. **Omnichannel Support**: Through Google Dialogflow, the platform can interact with users across various communication channels, ensuring accessibility regardless of the medium (text, email, or phone).
 
 ## Benefits
 - **Scalable and Adaptive**: Organizations can access the platform and tailor it to their specific needs, even with limited resources.
